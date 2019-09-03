@@ -13,7 +13,8 @@
         }
 
         body {
-            background-image: url(images/06denglu.jpg);
+            background: url(images/06denglu.jpg);
+            background-repeat: no-repeat;
         }
 
         .chrome {
@@ -27,6 +28,11 @@
             top: 20px;
             left: 20px;
             z-index: 100;
+        }
+
+        #a {
+            color: #6bd3fe;
+            text-decoration: none;
         }
 
         .nav {
@@ -67,7 +73,8 @@
             height: 320px;
             background-color: #f2f7fa;
             margin: 0 auto;
-            padding-top: 31px;
+            padding-top: 4px;
+            line-height: 54px;
         }
 
         /* “账号登录”样式 */
@@ -90,11 +97,6 @@
             overflow: hidden;
         }
 
-        /* 输入框 */
-        .user1 input {
-            outline: none;
-        }
-
         /* 输入密码行 */
         .form .user2 {
             width: 320px;
@@ -104,7 +106,7 @@
             margin-top: 10px;
             border-bottom: 1px solid #e1e6e9;
             overflow: hidden;
-            
+
         }
 
         /* 小图标样式 */
@@ -120,6 +122,7 @@
             line-height: 27px;
             text-indent: 5px;
             margin-top: -7px;
+            background-color: #f2f7fa;
         }
 
         /* 登录按钮样式 */
@@ -132,7 +135,7 @@
             border-radius: 5px;
             margin: 0 auto;
             display: block;
-            margin-top: 50px;
+            margin-top: 60px;
             border: 1px solid #49c0e0;
             color: #feffff;
             letter-spacing: 1px;
@@ -144,7 +147,6 @@
             font-size: 12px;
             color: #909090;
             line-height: 20px;
-            margin-bottom: -100px;
         }
 
         .js .box {
@@ -218,7 +220,11 @@
     <div>
         <div>
             <!-- 左上角部分 -->
-            <div class="chrome">建议使用Chrome浏览器</div>
+            <div class="chrome">
+                <span>建议使用</span>
+                <a href="" id="a">Chrome</a>
+                <span>浏览器</span>
+            </div>
 
             <!-- 中上LOGO -->
             <div class="nav">
@@ -241,11 +247,11 @@
                         <div class="user1">
                             <img src="images/user.png" alt="">
 
-                            <input type="text">
+                            <input type="text" placeholder="邮箱">
                         </div>
                         <div class="user2">
                             <img src="images/passwd.png" alt="">
-                            <input type="password">
+                            <input type="password" placeholder="密码">
                         </div>
                         <div>
                             <button type="button">马上登录</button>
